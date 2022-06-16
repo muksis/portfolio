@@ -1,9 +1,11 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from "./components/Card";
+import Navbar from './components/Navbar';
+import Home from "./pages/Home";
+import About from './pages/About';
+import Skills from './pages/Skills';
 import Projects from "./pages/Projects";
 import Project from './pages/Project';
-import Contacts from "./pages/Contacts";
-import Navbar from './components/Navbar';
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -12,9 +14,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:projectId" element={<Project />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
