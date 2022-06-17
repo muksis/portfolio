@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -57,6 +58,26 @@ const Navbar = () => {
           </li>
         </ul>
 
+        {/* Social icons */}
+        <div className="hidden lg:flex fixed flex-col top-[35%] right-0">
+          <ul>
+            <li className="w-[60px] h-[40px] flex items-center hover:scale-125 duration-500">
+              <a className="flex" href="/">
+                <FaLinkedin size={30} />
+              </a>
+            </li>
+            <li className="w-[60px] h-[40px] flex items-center hover:scale-125 duration-500">
+              <a className="flex" href="/">
+                <FaGithub size={30} />
+              </a>
+            </li>
+            <li className="w-[60px] h-[40px] flex items-center hover:scale-125 duration-500">
+              <a className="flex" href="/">
+                <HiOutlineMail size={30} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }
