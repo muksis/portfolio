@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'space-mono': ['"Space Mono"', "Trispace", '"Courier New"'],
+        'space-mono': ['"Space Mono"', '"Trispace"', '"Courier New"'],
       },
     },
   },
