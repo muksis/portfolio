@@ -42,19 +42,19 @@ const Navbar = () => {
           !showNav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#fff] flex flex-col justify-center items-center"
         }>
           <li className="py-6 text-4xl">
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={handleClick}>Home</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={handleClick}>About</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/skills">Skills</Link>
+            <Link to="/skills" onClick={handleClick}>Skills</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects" onClick={handleClick}>Projects</Link>
           </li>
           <li className="py-6 text-4xl">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={handleClick}>Contact</Link>
           </li>
         </ul>
 
