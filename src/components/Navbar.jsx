@@ -72,14 +72,14 @@ const Navbar = () => {
               </a>
             </li>
             <li className="w-[60px] h-[40px] flex items-center hover:scale-125 duration-500">
-              <a className="flex" href="/">
+              <Link to="/contact" className="flex">
                 <HiOutlineMail size={30} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-    )
+    );
   }
     
   export default Navbar;

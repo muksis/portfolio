@@ -12,8 +12,9 @@ const Projects = () => {
           <p className="text-4xl font-bold inline border-b-4 border-black">Projects</p>
           <p className="py-6">// These are some of my recent projects</p>
         </div>
-
+        {/* Projects container*/}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {/* Card */}
           <div style={{backgroundImage: `url(${exterior_1})`}} className="group container flex justify-center items-center mx-auto content-div">
 
             {/* HoverEffects */}
@@ -28,12 +29,11 @@ const Projects = () => {
                 <a href="/">
                   <button className="text-center px-4 py-3 m-2 bg-white font-bold text-lg">Code</button>
                 </a>
-
               </div>
             </div>
           </div>
         </div>
-
+        
       </div>
     </div>
   );

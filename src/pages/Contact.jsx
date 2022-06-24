@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div>
+    <div className="w-full h-screen">
       Contact
     </div>
   );
