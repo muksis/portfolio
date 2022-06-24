@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiExpress, SiNodedotjs, SiMongodb, SiFirebase, SiBootstrap, SiTailwindcss, SiDocker, SiPostman } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiRedux, SiNextdotjs, SiExpress, SiNodedotjs, SiMongodb, SiFirebase, SiBootstrap, SiTailwindcss, SiDocker, SiPostman, SiJest } from "react-icons/si";
 
 const Skills = () => {
     return (
@@ -36,6 +36,14 @@ const Skills = () => {
               <p>GitHub</p>
             </div>
             <div className="hover:scale-110 duration-500">
+              <SiRedux className="w-20 mx-auto" />
+              <p>Redux</p>
+            </div>
+            <div className="hover:scale-110 duration-500">
+              <SiNextdotjs className="w-20 mx-auto" />
+              <p>Next.js</p>
+            </div>
+            <div className="hover:scale-110 duration-500">
               <SiExpress className="w-20 mx-auto" />
               <p>Express</p>
             </div>
@@ -66,6 +74,10 @@ const Skills = () => {
             <div className="hover:scale-110 duration-500">
               <SiPostman className="w-20 mx-auto" />
               <p>Postman</p>
+            </div>
+            <div className="hover:scale-110 duration-500">
+              <SiJest className="w-20 mx-auto" />
+              <p>Jest</p>
             </div>
           </div>
         </div>
