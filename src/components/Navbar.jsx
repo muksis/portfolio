@@ -62,12 +62,12 @@ const Navbar = () => {
         <div className="hidden lg:flex fixed flex-col top-[35%] right-0">
           <ul>
             <li className="w-[60px] h-[40px] flex items-center hover:scale-125 duration-500">
-              <a className="flex" href="https://www.linkedin.com/in/muksiscat/" target="_blank">
+              <a className="flex" href="https://www.linkedin.com/in/muksiscat/" target="_blank" rel="noreferrer">
                 <FaLinkedin size={30} />
               </a>
             </li>
             <li className="w-[60px] h-[40px] flex items-center hover:scale-125 duration-500">
-              <a className="flex" href="https://github.com/muksis" target="_blank">
+              <a className="flex" href="https://github.com/muksis" target="_blank" rel="noreferrer">
                 <FaGithub size={30} />
               </a>
             </li>
