@@ -14,12 +14,14 @@ const Home = () => {
         <h2 className="text-4xl sm:text-7xl font-bold text-[#6d6d6d]">I'm a Full Stack Developer.</h2>
         <p className="text-[#6d6d6d] py-4 max-w-[700px]">Currently, I speciazile in building full-stack web application.</p>
         <div>
-          <button onClick={handleClick} className="border-black group border-2 px-6 py-3 my-2 flex items-center">
-            View Projects
-            <span className="group-hover:rotate-90 duration-500">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+          <Link to="/projects">
+            <button onClick={handleClick} className="border-black group border-2 px-6 py-3 my-2 flex items-center">
+              View Projects
+              <span className="group-hover:rotate-90 duration-500">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
