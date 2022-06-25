@@ -14,26 +14,10 @@ const Projects = () => {
         </div>
         {/* Projects container*/}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Card */}
-          <div style={{backgroundImage: `url(${exterior_1})`}} className="group container flex justify-center items-center mx-auto content-div">
-
-            {/* HoverEffects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Project 1
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center px-4 py-3 m-2 bg-white font-bold text-lg">Demo</button>
-                </a>
-                <a href="/">
-                  <button className="text-center px-4 py-3 m-2 bg-white font-bold text-lg">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard url={exterior_1} name="Project 1" demoRef="/" codeRef="/" />
+          <ProjectCard url={exterior_2} name="Project 2" demoRef="/" codeRef="/" />
+          <ProjectCard url={exterior_3} name="Project 3" demoRef="/" codeRef="/" />
         </div>
-        
       </div>
     </div>
   );

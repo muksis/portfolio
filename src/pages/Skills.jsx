@@ -1,3 +1,4 @@
+import SkillCard from "../components/SkillCard";
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit, SiGithub, SiRedux, SiNextdotjs, SiExpress, SiNodedotjs, SiMongodb, SiFirebase, SiBootstrap, SiTailwindcss, SiDocker, SiPostman, SiJest } from "react-icons/si";
 
 const Skills = () => {
@@ -11,74 +12,22 @@ const Skills = () => {
           </div>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-            <div className="hover:scale-110 duration-500">
-              <SiHtml5 className="w-20 mx-auto" />
-              <p>HTML</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiCss3 className="w-20 mx-auto" />
-              <p>CSS</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiJavascript className="w-20 mx-auto" />
-              <p>JS</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiReact className="w-20 mx-auto" />
-              <p>ReactJS</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiGit className="w-20 mx-auto" />
-              <p>Git</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiGithub className="w-20 mx-auto" />
-              <p>GitHub</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiRedux className="w-20 mx-auto" />
-              <p>Redux</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiNextdotjs className="w-20 mx-auto" />
-              <p>Next.js</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiExpress className="w-20 mx-auto" />
-              <p>Express</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiNodedotjs className="w-20 mx-auto" />
-              <p>Node.js</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiMongodb className="w-20 mx-auto" />
-              <p>MongoDB</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiFirebase className="w-20 mx-auto" />
-              <p>Firebase</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiBootstrap className="w-20 mx-auto" />
-              <p>Bootstrap</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiTailwindcss className="w-20 mx-auto" />
-              <p>Tailwind CSS</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiDocker className="w-20 mx-auto" />
-              <p>Docker</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiPostman className="w-20 mx-auto" />
-              <p>Postman</p>
-            </div>
-            <div className="hover:scale-110 duration-500">
-              <SiJest className="w-20 mx-auto" />
-              <p>Jest</p>
-            </div>
+            <SkillCard icon={<SiHtml5 className="w-20 mx-auto" />} name="HTML" />
+            <SkillCard icon={<SiCss3 className="w-20 mx-auto" />} name="CSS" />
+            <SkillCard icon={<SiJavascript className="w-20 mx-auto" />} name="JS" />
+            <SkillCard icon={<SiReact className="w-20 mx-auto" />} name="ReactJS" />
+            <SkillCard icon={<SiGit className="w-20 mx-auto" />} name="Git" />
+            <SkillCard icon={<SiRedux className="w-20 mx-auto" />} name="Redux" />
+            <SkillCard icon={<SiNextdotjs className="w-20 mx-auto" />} name="Next.js" />
+            <SkillCard icon={<SiExpress className="w-20 mx-auto" />} name="Express" />
+            <SkillCard icon={<SiNodedotjs className="w-20 mx-auto" />} name="Node.js" />
+            <SkillCard icon={<SiMongodb className="w-20 mx-auto" />} name="MongoDB" />
+            <SkillCard icon={<SiFirebase className="w-20 mx-auto" />} name="Firebase" />
+            <SkillCard icon={<SiBootstrap className="w-20 mx-auto" />} name="Bootstrap" />
+            <SkillCard icon={<SiTailwindcss className="w-20 mx-auto" />} name="Tailwind CSS" />
+            <SkillCard icon={<SiDocker className="w-20 mx-auto" />} name="Docker" />
+            <SkillCard icon={<SiPostman className="w-20 mx-auto" />} name="Postman" />
+            <SkillCard icon={<SiJest className="w-20 mx-auto" />} name="Jest" />
           </div>
         </div>
       </div>
