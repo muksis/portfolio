@@ -5,7 +5,7 @@ import exterior_3 from '../assets/exterior_3.jpeg';
 
 const Projects = () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full md:h-screen'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
@@ -15,7 +15,7 @@ const Projects = () => {
           <p className='py-6'>// These are some of my recent projects</p>
         </div>
         {/* Projects container*/}
-        <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
+        <div className='grid md:grid-cols-2 gap-4'>
           <ProjectCard
             url={exterior_1}
             name='Project 1'
