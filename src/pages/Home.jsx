@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   const handleClick = () => {};
@@ -22,10 +22,14 @@ const Home = () => {
               onClick={handleClick}
               className='border-black group border-2 px-6 py-3 my-2 flex items-center'
             >
-              View Projects
-              <span className='group-hover:rotate-90 duration-500'>
-                <HiArrowNarrowRight className='ml-3' />
-              </span>
+              <Typewriter
+                options={{
+                  strings: ['View Projects'],
+                  autoStart: true,
+                  loop: true,
+                  pauseFor: 5000,
+                }}
+              />
             </button>
           </Link>
         </div>

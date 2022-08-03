@@ -25,14 +25,22 @@ const Navbar = () => {
       {/* Menu */}
       <ul className='hidden md:flex'>
         <li className='hover:border-transparent hover:bg-black hover:text-white'>
-          <Link to='/' className={pathMatchRoute('/') ? 'underline' : ''}>
+          <Link
+            to='/'
+            className={
+              pathMatchRoute('/') && 'underline decoration-2 underline-offset-2'
+            }
+          >
             Home
           </Link>
         </li>
         <li className='hover:border-transparent hover:bg-black hover:text-white'>
           <Link
             to='/about'
-            className={pathMatchRoute('/about') ? 'underline' : ''}
+            className={
+              pathMatchRoute('/about') &&
+              'underline decoration-2 underline-offset-2'
+            }
           >
             About
           </Link>
@@ -40,7 +48,10 @@ const Navbar = () => {
         <li className='hover:border-transparent hover:bg-black hover:text-white'>
           <Link
             to='/skills'
-            className={pathMatchRoute('/skills') ? 'underline' : ''}
+            className={
+              pathMatchRoute('/skills') &&
+              'underline decoration-2 underline-offset-2'
+            }
           >
             Skills
           </Link>
@@ -48,7 +59,10 @@ const Navbar = () => {
         <li className='hover:border-transparent hover:bg-black hover:text-white'>
           <Link
             to='/projects'
-            className={pathMatchRoute('/projects') ? 'underline' : ''}
+            className={
+              pathMatchRoute('/projects') &&
+              'underline decoration-2 underline-offset-2'
+            }
           >
             Projects
           </Link>
@@ -56,7 +70,10 @@ const Navbar = () => {
         <li className='hover:border-transparent hover:bg-black hover:text-white'>
           <Link
             to='/contact'
-            className={pathMatchRoute('/contact') ? 'underline' : ''}
+            className={
+              pathMatchRoute('/contact') &&
+              'underline decoration-2 underline-offset-2'
+            }
           >
             Contact
           </Link>

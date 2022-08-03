@@ -5,7 +5,6 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import ContactSubmit from './pages/ContactSubmit';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/contact-submit' element={<ContactSubmit />} />
         </Routes>
       </Router>
     </div>
