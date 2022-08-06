@@ -18,27 +18,27 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-4'>
           <ProjectCard
             url={exterior_1}
-            name='Project 1'
+            name='Portfolio'
             demoRef='/'
-            codeRef='/'
+            codeRef='https://github.com/muksis/portfolio'
           />
           <ProjectCard
             url={exterior_2}
-            name='Project 2'
+            name='Zen Diary'
             demoRef='/'
-            codeRef='/'
+            codeRef='https://github.com/muksis/zen-diary'
           />
           <ProjectCard
             url={exterior_3}
-            name='Project 3'
+            name='Clonflix'
             demoRef='/'
-            codeRef='/'
+            codeRef='https://github.com/muksis/netflix-clone'
           />
           <ProjectCard
             url={exterior_3}
-            name='Project 4'
+            name='Zero Waste'
             demoRef='/'
-            codeRef='/'
+            codeRef='https://github.com/muksis/zero-waste'
           />
         </div>
       </div>
