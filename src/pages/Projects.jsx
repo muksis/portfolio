@@ -5,9 +5,9 @@ import exterior_3 from '../assets/exterior_3.jpeg';
 
 const Projects = () => {
   return (
-    <div className='w-full md:h-screen'>
+    <div className='w-full md:h-screen pt-[100px]'>
       {/* Container */}
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col md:justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-black'>
             Projects

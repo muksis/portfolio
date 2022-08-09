@@ -52,7 +52,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full h-screen flex justify-center items-center p-4'>
+    <div className='w-full h-screen flex pt-[100px] md:justify-center items-center p-4'>
       <form
         onSubmit={handleSubmit}
         className='flex flex-col max-w-[600px] w-full'
