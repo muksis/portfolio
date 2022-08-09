@@ -1,12 +1,33 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
   const [name, setName] = useState('test');
   const [email, setEmail] = useState('test@test.com');
   const [message, setMessage] = useState('test test');
 
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!name) {
+      return toast.error('Please enter name');
+    }
+
+    if (!validateEmail(email)) {
+      return toast.error('Please enter a valid email');
+    }
+
+    if (!message) {
+      return toast.error('Please enter your message');
+    }
 
     const formData = new FormData();
     formData.append('name', name);
@@ -19,15 +40,15 @@ const Contact = () => {
     })
       .then((response) => {
         if (response.status === 200) {
-          alert('Success!');
+          toast.success('Success!');
           setName('');
           setEmail('');
           setMessage('');
         } else {
-          alert('Something went wrong');
+          toast.error('Something went wrong');
         }
       })
-      .catch((error) => alert('Error'));
+      .catch((error) => toast.error('Error'));
   };
 
   return (
@@ -48,7 +69,6 @@ const Contact = () => {
           name='name'
           value={name}
           onChange={(e) => setName(e.target.value)}
-          required
         />
         <input
           className='border-2 border-black my-4 p-2 focus:outline-none'
@@ -57,7 +77,6 @@ const Contact = () => {
           name='email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          required
         />
         <textarea
           className='border-2 border-black p-2 focus:outline-none'
@@ -66,7 +85,6 @@ const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows='10'
-          required
         ></textarea>
         <button className='border-2 border-black hover:bg-black hover:text-white px-4 py-3 my-8 mx-auto flex items-center'>
           Submit
