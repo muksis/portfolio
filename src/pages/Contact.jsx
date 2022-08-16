@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const Contact = () => {
-  const [name, setName] = useState('test');
-  const [email, setEmail] = useState('test@test.com');
-  const [message, setMessage] = useState('test test');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const validateEmail = (email) => {
     return String(email)
