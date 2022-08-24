@@ -24,7 +24,7 @@ const Projects = () => {
             codeRef='https://github.com/muksis/portfolio'
           />
           <ProjectCard
-            url={exterior_2}
+            url={zenDiary}
             name='Zen Diary'
             demoRef='http://zen-diary.mariia.io'
             codeRef='https://github.com/muksis/zen-diary'
@@ -36,7 +36,7 @@ const Projects = () => {
             codeRef='https://github.com/muksis/netflix-clone'
           />
           <ProjectCard
-            url={exterior_3}
+            url={zeroWaste}
             name='Zero Waste'
             demoRef='http://zero-waste.mariia.io'
             codeRef='https://github.com/muksis/zero-waste'
