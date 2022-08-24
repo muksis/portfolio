@@ -2,7 +2,7 @@ function Card(props) {
   return (
     <div
       style={{ backgroundImage: `url(${props.url})` }}
-      className='group container flex justify-center items-center mx-auto content-div border-b-2 border-black'
+      className='group container flex justify-center items-center mx-auto content-div border-2 border-black'
     >
       {/* HoverEffects */}
       <div className='opacity-0 group-hover:opacity-100 text-center'>
