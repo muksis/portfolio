@@ -1,7 +1,8 @@
 import ProjectCard from '../components/ProjectCard';
-import exterior_1 from '../assets/exterior_1.jpeg';
-import exterior_2 from '../assets/exterior_2.jpeg';
-import exterior_3 from '../assets/exterior_3.jpeg';
+import portfolio from '../assets/portfolio.png';
+import zenDiary from '../assets/zenDiary.png';
+import clonflix from '../assets/clonflix.png';
+import zeroWaste from '../assets/zeroWaste.png';
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
         {/* Projects container*/}
         <div className='grid md:grid-cols-2 gap-4'>
           <ProjectCard
-            url={exterior_1}
+            url={portfolio}
             name='Portfolio'
             demoRef='http://mariia.io'
             codeRef='https://github.com/muksis/portfolio'
@@ -29,7 +30,7 @@ const Projects = () => {
             codeRef='https://github.com/muksis/zen-diary'
           />
           <ProjectCard
-            url={exterior_3}
+            url={clonflix}
             name='Clonflix'
             demoRef='http://clonflix.mariia.io'
             codeRef='https://github.com/muksis/netflix-clone'
