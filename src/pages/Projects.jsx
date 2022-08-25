@@ -1,7 +1,7 @@
 import ProjectCard from '../components/ProjectCard';
 import portfolio from '../assets/portfolio.png';
 import zenDiary from '../assets/zenDiary.png';
-import clonflix from '../assets/clonflix.png';
+import movies from '../assets/movies.png';
 import zeroWaste from '../assets/zeroWaste.png';
 
 const Projects = () => {
@@ -30,10 +30,10 @@ const Projects = () => {
             codeRef='https://github.com/muksis/zen-diary'
           />
           <ProjectCard
-            url={clonflix}
-            name='Clonflix'
-            demoRef='http://clonflix.mariia.io'
-            codeRef='https://github.com/muksis/netflix-clone'
+            url={movies}
+            name='Movies'
+            demoRef='http://movies.mariia.io'
+            codeRef='https://github.com/muksis/movies'
           />
           <ProjectCard
             url={zeroWaste}
