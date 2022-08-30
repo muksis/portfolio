@@ -20,25 +20,25 @@ const Projects = () => {
           <ProjectCard
             url={portfolio}
             name='Portfolio'
-            demoRef='http://mariia.io'
+            demoRef='https://mariia-io.herokuapp.com'
             codeRef='https://github.com/muksis/portfolio'
           />
           <ProjectCard
             url={zenDiary}
             name='Zen Diary'
-            demoRef='http://zen-diary.mariia.io'
+            demoRef='https://zen-diary.herokuapp.com'
             codeRef='https://github.com/muksis/zen-diary'
           />
           <ProjectCard
             url={movies}
             name='Movies'
-            demoRef='http://movies.mariia.io'
+            demoRef='https://movies-mariia-io.herokuapp.com'
             codeRef='https://github.com/muksis/movies'
           />
           <ProjectCard
             url={zeroWaste}
             name='Zero Waste'
-            demoRef='http://zero-waste.mariia.io'
+            demoRef='https://zero-waste-mariia-io.herokuapp.com'
             codeRef='https://github.com/muksis/zero-waste'
           />
         </div>
