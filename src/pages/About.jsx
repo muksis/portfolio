@@ -17,7 +17,7 @@ const About = () => {
           <div>
             <p>
               I am a full-stack (MERN) web developer, and I love coding. I have
-              experience of over 10 years in business development both in a big
+              experience of over 10 years in business development, both in a big
               company and a small start-up. During those years, I worked closely
               with IT businesses and was always interested in finding out what
               was under the hood, so I finally got under the hood. Now I am an
