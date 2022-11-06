@@ -16,9 +16,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              I am a full-stack (MERN) web developer, and I love coding. I have
-              experience of over 10 years in business development, both in a big
-              company and a small start-up. During those years, I worked closely
+              I am a full-stack (MERN) web developer, and I love coding. I have a 10-year background in business development, both in a large international company and a small start-up. During those years, I worked closely
               with IT businesses and was always interested in finding out what
               was under the hood, so I finally got under the hood. Now I am an
               MIT program graduate and I am really excited about making my
