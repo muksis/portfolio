@@ -3,6 +3,7 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiGit,
   SiGithub,
@@ -37,6 +38,10 @@ const Skills = () => {
           <SkillCard
             icon={<SiJavascript className='w-20 mx-auto' />}
             name='JS'
+          />
+          <SkillCard
+            icon={<SiTypescript className='w-20 mx-auto' />}
+            name='TS'
           />
           <SkillCard
             icon={<SiReact className='w-20 mx-auto' />}
