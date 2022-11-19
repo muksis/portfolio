@@ -37,11 +37,11 @@ const Skills = () => {
           <SkillCard icon={<SiCss3 className='w-20 mx-auto' />} name='CSS' />
           <SkillCard
             icon={<SiJavascript className='w-20 mx-auto' />}
-            name='JS'
+            name='JavaScript'
           />
           <SkillCard
             icon={<SiTypescript className='w-20 mx-auto' />}
-            name='TS'
+            name='TypeScript'
           />
           <SkillCard
             icon={<SiReact className='w-20 mx-auto' />}
